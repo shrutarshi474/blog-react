@@ -1,0 +1,40 @@
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 60vh;
+  background-color: #2f2e2e;
+  color: white;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  padding-left: 20%;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-right: 20%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+}
